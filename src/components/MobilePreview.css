@@ -1,0 +1,41 @@
+.mobile-frame {
+  width: 375px;
+  height: 667px; /* iPhone 6/7/8 standard height */
+  border: 16px solid #333;
+  border-radius: 36px;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-header {
+  height: 30px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #555;
+  flex-shrink: 0;
+}
+
+.mobile-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  text-align: left; /* Ensure content is left-aligned inside the phone */
+}
+
+/* Scrollbar styling for webkit to make it look cleaner inside the 'phone' */
+.mobile-content::-webkit-scrollbar {
+  width: 6px;
+}
+.mobile-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
