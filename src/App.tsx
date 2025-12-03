@@ -19,7 +19,7 @@ function App() {
         <div className="main-container" style={{ display: 'flex', gap: '40px', justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'wrap' }}>
             <div className="editor-wrapper" style={{ flex: '1', minWidth: '600px', maxWidth: '800px' }}>
               <UREditor
-                  initialValue="# Hello World"
+                  initialValue=" "
                   onChange={handleEditorChange}
               />
             </div>
